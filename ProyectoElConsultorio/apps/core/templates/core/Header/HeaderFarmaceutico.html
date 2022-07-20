@@ -1,0 +1,32 @@
+<header>
+    {% load static %}
+    <div class="header-flex" style="background-color: rgba(251, 254, 251, 88%);">
+        <div class="logo-flex">
+            <a href="{% url 'home' %}">
+                <img
+                    src=" {% static '/core/img/925.png' %}"  
+                    alt="logo"
+                    loading="lazy"
+                      
+                />
+            </a>   <!-- 922 para telefono y 925 para escritorio -->   
+        </div>
+            <div class="sesion-flex">
+                <div class="navigation">
+
+                    <a href="{% url 'logout' %}"><button type="button" class="btn-ini  px-3 me-2" >
+                        <i class="fa-solid fa-user"></i><br> Salir
+                        </button></a>
+                
+                    </a>
+                  
+                </div>
+            </div>
+
+    </div>
+
+<br>
+
+  
+  
+</header>
